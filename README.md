@@ -1,38 +1,17 @@
-# create-svelte
+# Svelte issue
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+[`Issue 3052`](https://github.com/sveltejs/kit/issues/3052);
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+npm install
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+First what works:
+go to: http://localhost:3000/
+click go to server
+then click go to library
+==> in the console you only see "INIT LAYOUT SERVER toto" once
 
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+now start your navigation at 'http://localhost:3000/server/toto' (refresh once at this url to make sure you are starting here
+click go to library
+you can now see in the console that 'INIT LAYOUT SERVER toto' is printed twice
